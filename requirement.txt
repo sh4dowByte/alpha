@@ -1,2 +1,4 @@
+rich
 pyperclip
 tabulate
+prompt_toolkit
