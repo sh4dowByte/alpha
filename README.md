@@ -31,10 +31,56 @@
 **Note**: Alpha is designed for educational and testing purposes. Use of this application should be conducted in a safe and legal environment and adhere to applicable cybersecurity laws and ethics.
 
 
+## ⚙️ Installation
+
+### Using pipx (Recommended)
+`pipx` is a tool to install and run Python applications in isolated environments. Follow these steps to install Alpha:
+
+1. Install pipx:
+   ```bash
+   sudo apt install pipx
+   pipx ensurepath
+   ```
+
+2. Clone the Alpha repository:
+   ```bash
+   git clone https://github.com/sh4dowByte/alpha.git
+   cd alpha
+   ```
+
+3. Install Alpha using pipx:
+   ```bash
+   pipx install .
+   ```
+
+### Alternative Setup - Using Alias
+If you prefer not to use `pipx`, you can set up an alias to run `alpha.py` directly from your terminal.
+
+1. Clone the Alpha repository:
+   ```bash
+   git clone https://github.com/sh4dowByte/alpha.git
+   cd alpha
+   ```
+
+2. Install the required dependencies from `requirements.txt`:
+   ```bash
+   python3 -m pip install -r requirements.txt
+   ```
+
+3. Open your terminal and add the following alias to your shell configuration file (e.g., `~/.bashrc` or `~/.zshrc`):
+   ```bash
+   alias alpha='python3 ~/Pentest/alpha/alpha.py'
+   ```
+
+4. After adding the alias, run `source ~/.bashrc` (or `source ~/.zshrc` for zsh) to reload your shell configuration.
+
+Now, you can run `alpha` directly from your terminal!
+
+
 ## 📚 Reference Tools
 
 - **Villain** by [t3l3machus](https://github.com/t3l3machus/Villain) - A powerful multi-client/multi-session reverse shell manager for advanced penetration testing.
-- 
+
 ## Demo App
 
 <img src="https://raw.githubusercontent.com/sh4dowByte/media/main/alpha/Alpha.gif"  style="max-width: 80%;">

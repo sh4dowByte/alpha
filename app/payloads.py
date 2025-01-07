@@ -106,8 +106,11 @@ class PayloadGenerator:
 
         print(f"Generated Payload: {Colors.text(final_payload)}")
 
-        pyperclip.copy(final_payload)
-        print(Colors.text("Payload has been copied to the clipboard!", Colors.WHITE))
+        try:
+            pyperclip.copy(final_payload)
+            print(Colors.text("Payload has been copied to the clipboard!", Colors.WHITE))
+        except  Exception as e:
+            print(f"An unexpected error occurred: {e}")
 
 class PayloadCompleter(Completer):
     def __init__(self, payloads):
